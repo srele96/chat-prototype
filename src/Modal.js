@@ -2,16 +2,20 @@ import React, { useEffect } from 'react';
 import ReactDOM from 'react-dom';
 
 
+const modalRoot = document.getElementById('profile-page');
 function Modal(props) {
   const el = document.createElement('div');
-  
+  // let modalRoot = null;
+  useEffect(() => {
+    modalRoot.appendChild(el);
+    return () => modalRoot.removeChild(el);
+  });
+
   return(
-    // <div>
-    //   <div>
-    //     <div role="button" onClick={props.close()}>X</div>
-    //     <p>Some setting</p>
-    //   </div>
-    // </div>
+    ReactDOM.createPortal(
+      props.children,
+      modalRoot
+    )
   );
 }
 
