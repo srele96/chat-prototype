@@ -1,6 +1,6 @@
 import React from 'react';
-import './RecentChats';
 import ProfilePage from './ProfilePage';
+import './App.css';
 
 function App() {
   return (

@@ -1,0 +1,66 @@
+.avatarWrapper {
+  padding: 1rem;
+  position: relative;
+  max-width: 20rem;
+  width: 100vw;
+  height: max-content;
+  /* left commented in case of needed blurred background */
+  /* background-color: black; */
+  /* border-radius: 15px; */
+  /* overflow: hidden; */
+}
+
+.centerAvatar {
+  position: relative;
+  border: 1px solid white;
+  box-shadow: 3px 3px 5px 0px black;
+  border-radius: 15px;
+  border: 1px solid black;
+  overflow: hidden;
+}
+
+.blurBg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /* background-color: rgba(0, 0, 0, 0.5); */
+  /* filter: blur(15px); */
+  z-index: -999;
+}
+
+.imageUploadLabel {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  z-index: 999;
+}
+
+.imageUploadLabel:hover {
+  background-color: hsla(0, 0%, 0%, 0.5);
+  cursor: pointer;
+}
+
+.faFolderPlus {
+  opacity: 50%;
+  font-size: 4rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.avatarUpload {
+  opacity: 0;
+  cursor: pointer;
+}
+
+.avatar {
+  display: block;
+  width: 100%;
+  height: auto;
+}
