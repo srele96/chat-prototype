@@ -1,0 +1,12 @@
+.aboutMe {
+  overflow-wrap: break-word;
+  max-width: 25rem;
+  width: 100vw;
+  min-height: 10rem;
+}
+
+.description {
+  max-width: 25rem;
+  width: 100vw;
+  height: max-content;
+}

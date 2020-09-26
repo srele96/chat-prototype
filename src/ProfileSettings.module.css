@@ -1,0 +1,25 @@
+.setting {
+  max-width: 17em;
+  width: 100vw;
+  min-height: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: aquamarine;
+}
+
+.settingsHeader {
+  max-width: 17rem;
+  width: 100vw;
+  min-height: 2rem;
+  padding-left: 1rem;
+  display: flex;
+  align-items: center;
+  background-color: aqua;
+}
+
+.maxContent {
+  max-width: 17rem;
+  width: 100vw;
+  height: max-content;
+}

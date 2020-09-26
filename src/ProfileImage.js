@@ -12,7 +12,6 @@ function ProfileImage() {
           title="Profile image upload"
           className={styles.imageUploadLabel}
         >
-          <FontAwesomeIcon icon={faFolderPlus} className={styles.faFolderPlus} />
           <input
             type="file"
             name="image"
@@ -20,13 +19,13 @@ function ProfileImage() {
             id="avatar-upload"
           />
         </label>
+        <FontAwesomeIcon icon={faFolderPlus} className={styles.faFolderPlus} />
         <img
           src="http://localhost:8000/image?e=1Sw0j2zdbsnbSr6160AYQKx0p5IDtFgQTTF6Yng4Qr0c2"
           alt="User profile"
           className={styles.avatar}
         />
       </div>
-      <div className={styles.blurBg}></div>
     </div>
   )
 }

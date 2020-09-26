@@ -1,11 +1,9 @@
 import React, { useEffect } from 'react';
 import ReactDOM from 'react-dom';
 
-
-const modalRoot = document.getElementById('profile-page');
+const modalRoot = document.getElementsByTagName('body')[0];
 function Modal(props) {
   const el = document.createElement('div');
-  // let modalRoot = null;
   useEffect(() => {
     modalRoot.appendChild(el);
     return () => modalRoot.removeChild(el);

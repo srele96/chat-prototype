@@ -1,0 +1,20 @@
+.message {
+  max-width: 17em;
+  width: 100vw;
+  min-height: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: aquamarine;
+}
+
+.recentMessages {
+  max-width: 17rem;
+  width: 100vw;
+}
+
+.maxContent {
+  max-width: 17rem;
+  width: 100vw;
+  height: max-content;
+}

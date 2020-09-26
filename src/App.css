@@ -3,3 +3,9 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+*:focus {
+  outline-style: solid;
+  outline-width: 0.2rem;
+  outline-color: rgb(55,55,55);
+}

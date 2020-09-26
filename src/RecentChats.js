@@ -1,18 +1,21 @@
 import React  from 'react';
+import style from './RecentChats.module.css';
 
 function RecentChats(props) {
 
   function renderMessages() {
-    const messages = props.messages.map(message => <li>{message}</li>);
+    const messages = props.messages.map(message => 
+      <li><div className={style.message}>{message}</div></li>
+    );
     return (
-      <ul>
+      <ul className={style.recentMessages}>
         {messages}
       </ul>
     );
   }
 
   return (
-    <div>
+    <div className={style.maxContent}>
       {renderMessages()}
     </div>
   );
