@@ -1,0 +1,69 @@
+.recent-chats {
+  width: 100vw;
+  max-width: 400px;
+  position: relative;
+}
+
+.recent-chats-container {
+  padding: 5px;
+  max-height: 600px;
+  overflow-y: scroll;
+}
+
+.recent-chats-header {
+  display: flex;
+  justify-content: center;
+  padding: 0.5rem;
+}
+
+.recent-messages {
+  list-style: none;
+}
+
+.message {
+  display: flex;
+  align-items: center;
+  border-radius: 1rem;
+  width: 100%;
+  min-height: 80px;
+  box-shadow: 2px 2px 3px hsl(0, 0%, 80%),
+  -2px -2px 3px hsl(0, 0%, 80%);
+  margin-bottom: 10px;
+}
+
+.message-content {
+  min-height: 4rem;
+  max-height: 4rem;
+  overflow-y: scroll;
+  word-wrap: break-word;
+  margin-right: 5%;
+  margin-left: 5%;
+}
+
+.message-sender {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.mask {
+  box-shadow: 2px 2px 2px hsl(0, 0%, 80%),
+    -2px -2px 2px hsl(0, 0%, 80%);
+  border-radius: 50%;
+  overflow: hidden;
+  max-width: 50px;
+  min-width: 50px;
+  margin-right: 5px;
+}
+
+.sender-name {
+  text-align: center;
+  box-shadow: 0 2px 0px hsl(0, 0%, 80%);
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.sender-img {
+  width: 100%;
+  height: auto;
+}

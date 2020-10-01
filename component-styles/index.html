@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./index.css" type="text/css">
+  <link rel="stylesheet" href="./chat.css" type="text/css">
+  <link rel="stylesheet" href="./recentChats.css" type="text/css">
+  <title>Components</title>
+</head>
+<body>
+  <!-- <button class="button long" onclick="testClick(this)">Button</button> -->
+<div class="test-merge">
+
+</div>
+    <div class="chat-window">
+      <div class="chat-wrap">
+          <div class="messages">
+            <div class="out">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorum, sapiente ratione? Voluptas accusantium corporis, ullam iste magnam dicta illo, ad quidem in nisi debitis voluptatem obcaecati eveniet doloremque maxime sunt.</div>
+            <div class="out">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam enim beatae totam fuga facere dolore nisi repellendus illum temporibus. Odit voluptatem commodi recusandae ad aliquam facere tempore atque aperiam eum.</div>
+            <div class="inc">wtf???</div>
+            <div class="out">s dhjahdsh wjdwqdw</div>
+            <div class="inc">dqwhdqwhdqwhdwhwhdqwhd qhwdhuqwdu hqwdqudwq hudq hqwd huqdhuq wdhuqwdhuqdw</div>
+            <div class="inc">wqd qdwhiu qwdhuq wdhqd qwd huqdwhuqwd dqwjih qdqd inqwdnidqwnqdwni</div>
+          </div>
+          <div class="typing">
+            <div class="type-message" contenteditable=""></div>
+            <button class="send-message"">Send</button>
+          </div>
+      </div>
+    </div>
+  
+    <div class="recent-chats">
+      <div class="recent-chats">
+        <div class="recent-chats-header">
+          <h3>Recent messages</h3>
+        </div>
+        <div class="recent-chats-container">
+          <!-- <ul class="recent-messages">
+            <li>
+              <div class="message">
+                <div class="message-sender">
+                  <div class="mask">
+                    <img src="./long.png" alt="sender" class="sender-img">
+                  </div>
+                  <p>Sender Name Lname</p>
+                </div>
+                <div class="message-content">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deleniti itaque maxime omnis voluptatibus placeat tempora. Aspernatur quod veniam accusantium ipsum, sunt nobis, nostrum nihil dicta sapiente fugiat blanditiis quidem fugit!
+                </div>
+              </div>
+            </li>
+          </ul> -->
+        </div>
+      </div>      
+    </div>
+  <script>
+    "use strict";
+    function testClick(clicked) {
+      console.log(`clicked ${clicked}`);
+    }
+
+    window.onload = () => {
+      simRecentMessages();
+      simMessages();
+    }
+
+    function simRecentMessages() {
+      const messagesContainer = document.getElementsByClassName('messages')[0];
+      for(let i = 0; i < 20; i++) {
+        // random class name choice
+        const choice = Math.floor(Math.random()*2);
+        const div = `<div class="${choice < 1 ? 'inc' : 'out'}"">` + 
+        `message content ahsdh ahsd ahsdhad hashd ahsdhasdhasdhashd</div>`;
+        messagesContainer.innerHTML += div;
+      }
+    }
+
+    function simMessages() {
+      let ul = document.createElement('ul');
+      let content = '';
+      const container = document.getElementsByClassName('recent-chats-container')[0];
+
+      for(let i = 0; i < 20; i++) {
+        content += 
+          '<li>' + 
+            '<div class="message">' + 
+              '<div>' + 
+                '<p class="sender-name">Sender asjdaj sdhja</p>' + 
+                '<div class="message-content">some measagejg haghahwdh ahdw' + 
+                  'hdahwhdahdawdha jsdhja sdhahd shadshasdasdasdasdasdad asd asd adss adasdadsadasda sda sdasd sasd asd asdadsa adhshd' + 
+                '</div>' + 
+              '</div>' +
+              '<div class="message-sender">' + 
+                '<div class="mask">' + 
+                  '<img src="./message-sender.jpg" class="sender-img" alt="sender" />' +
+                '</div>' +
+              '</div>' + 
+            '</div>' +
+          '</li>';
+      }
+      ul.innerHTML += content;
+      ul.classList.toggle('recent-messages');
+      container.appendChild(ul);
+    }
+  </script>
+</body>
+</html>

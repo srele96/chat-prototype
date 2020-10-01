@@ -1,5 +1,10 @@
+.settings {
+  max-width: 17rem;
+  width: 100vw;
+}
+
 .setting {
-  max-width: 17em;
+  max-width: 17rem;
   width: 100vw;
   min-height: 3rem;
   display: flex;

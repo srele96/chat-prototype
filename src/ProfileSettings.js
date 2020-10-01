@@ -31,7 +31,7 @@ function ProfileSettings(props) {
   }
 
   return(
-    <div className="settings">
+    <div className={style.settings}>
       {isModalVisible ? 
       (<Modal>
         <Setting setting={clickedSetting} hideSetting={hideSetting}  
