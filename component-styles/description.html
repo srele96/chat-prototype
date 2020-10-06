@@ -16,6 +16,107 @@
     body {
       background-color: hsl(0, 0%, 20%);
     }
+
+    @keyframes circular {
+      0% {
+        transform: rotate(0deg);
+      }
+      100% {
+        transform: rotate(360deg);
+      }
+    }
+
+    @-o-keyframes circular {
+      0% {
+        transform: rotate(0deg);
+      }
+      100% {
+        transform: rotate(360deg);
+      }
+    }
+
+    @-moz-keyframes circular {
+      0% {
+        transform: rotate(0deg);
+      }
+      100% {
+        transform: rotate(360deg);
+      }
+    }
+
+    @-webkit-keyframes circular {
+      0% {
+        transform: rotate(0deg);
+      }
+      100% {
+        transform: rotate(360deg);
+      }
+    }
+
+    .loading-text {
+      color: hsl(180, 100%, 50%);
+      font-size: 20px;
+      position: absolute;
+      top: 25%;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    .loading-wrap {
+      overflow: hidden;
+      width: 185px;
+      height: 185px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 50%;
+      position: relative;
+    }
+
+    .loading-overflow {
+      animation: circular 3s infinite linear;
+      -moz-animation: circular 3s infinite linear;
+      -o-animation: circular 3s infinite linear;
+      -ms-zoom-animation:  circular 3s infinite linear;
+      -webkit-animation: circular 3s infinite linear;
+      box-shadow: 5px -5px 5px hsl(180, 100%, 50%);
+      overflow: hidden;
+      border-radius: 50%;
+      width: 170px;
+      height: 170px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .loading {
+      position: relative;
+      width: 150px;
+      height: 150px;
+      box-shadow: 2px 2px 5px hsl(180, 100%, 50%), -2px -2px 5px hsl(180, 100%, 50%);
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .cover {
+      transform: rotate(45deg);
+      width: 100px;
+      height: 170px;
+      display: flex;
+      background-color: hsl(0, 0%, 20%);
+      justify-content: center;
+      align-items: center;
+    }
+
+    .center-dot {
+      box-shadow: 0 0 15px 15px hsl(180, 100%, 50%);
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      transform: rotate(-45deg);
+    }
   </style>
 </head>
 <body>
@@ -50,5 +151,29 @@
       </div>
     </div>
   </div>
+
+  <div class="loading-wrap">
+    <div class="loading-overflow">
+      <div class="loading">
+        <div class="cover">
+          <span class="center-dot"></span>
+        </div>
+      </div>
+    </div>
+    <span class="loading-text"></span>
+  </div>
+
+  <script>
+    let counter = 1;
+    let loadingText = document.getElementsByClassName('loading-text')[0];
+    let text = 'Loading...';
+    let interval = 3000 / text.length;
+    setInterval(function() {
+      loadingText.innerHTML = text.slice(0, counter);
+      // reset counter
+      if(counter === text.length) counter = 0;
+      counter++;
+    }, interval);
+  </script>
 </body>
 </html>

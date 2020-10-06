@@ -9,7 +9,9 @@ function ProfilePage() {
         <Profile />
       </div>
       <div>
-        <RecentChats messages={['first', 'second', 'third', 'fourth', 'fifth']} />
+        <RecentChats 
+          messages={['first ashjd ajhsd', 'second', 'third', 'fourth', 'fifth']} 
+        />
       </div>
     </div>
   );
