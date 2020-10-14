@@ -23,8 +23,10 @@
   background-color: aqua;
 }
 
-.maxContent {
+.settingsList {
+  list-style: none;
   max-width: 17rem;
   width: 100vw;
-  height: max-content;
+  height: 10rem;
+  overflow-y: scroll;
 }

@@ -1,13 +1,19 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import styles from './ProfileImage.module.css';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faFolderPlus } from "@fortawesome/free-solid-svg-icons"
 
 function ProfileImage() {
+  function fetchProfileImage(e) {
+    console.log(this);
+    console.log(e.target.files[0]);
+  }
+
   return (
     <div className={styles.avatarWrapper}>
       <div className={styles.centerAvatar}>
         <label
+          onChange={fetchProfileImage}
           htmlFor="avatar-upload"
           title="Profile image upload"
           className={styles.imageUploadLabel}
