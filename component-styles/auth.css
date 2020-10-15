@@ -1,0 +1,84 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: white;
+}
+
+body {
+  background-color: hsl(0, 0%, 20%);
+}
+
+.formWrap {
+  padding: 10px;
+  position: relative;
+  width: 100vw;
+  max-width: 300px;
+  text-align: center;
+}
+
+.loginForm {
+  margin-top: 5px;
+  border-radius: 5px;
+  box-shadow: 2px 2px 3px hsl(0, 0%, 25%),
+  -2px -2px 3px hsl(0, 0%, 70%);
+  
+  /* border: 1px solid black; */
+  padding: 0.5rem;
+}
+
+.username, .password {
+  background-color: inherit;
+  border: none;
+  box-shadow: inset 2px 2px 2px hsl(0, 0%, 40%),
+    inset -2px -2px 2px white;
+  padding: 0.2rem;
+  width: 100%;
+  height: 2rem;
+  border-radius: 5px;
+}
+
+.passwordLabel>p, .usernameLabel>p {
+  margin: 0.1rem;
+}
+
+.pwWrap {
+  position: relative;
+  display: flex;
+}
+
+.showPassword {
+  padding: 3px;
+  box-shadow: 1px 1px 1px hsl(0, 0%, 40%),
+    -1px -1px 1px white;
+  background-color: inherit;
+  border: none;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  margin-right: 7px;
+  border-radius: 5px;
+}
+
+.showPassword:hover {
+  box-shadow: inset 1px 1px 1px hsl(0, 0%, 40%),
+    inset -1px -1px 1px white;
+}
+
+.submit {
+  margin-top: 10px;
+  margin-left: auto;
+  display: block;
+  border-radius: 5px;
+  padding: 5px 10px;
+  box-shadow: 1px 1px 1px hsl(0, 0%, 40%),
+    -1px -1px 1px white;
+  background-color: inherit;
+  border: none;
+}
+
+.submit:hover {
+  box-shadow: inset 1px 1px 1px hsl(0, 0%, 40%),
+    inset -1px -1px 1px white;
+}

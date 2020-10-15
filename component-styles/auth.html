@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./auth.css" type="text/css">
+  <title>Auth</title>
+</head>
+<body>
+  <div class="formWrap">
+    <h1>Log in</h1>
+    <form action="#" method="POST" class="loginForm">
+      <label for="username" class="usernameLabel">
+        <p>Username</p>
+        <input type="text" name="username" class="username">
+      </label>
+      <label for="password" class="passwordLabel">
+        <p>Password</p>
+        <div class="pwWrap">
+          <input type="password" class="password">
+          <button type="button" class="showPassword" title="show password">
+            O
+          </button>
+        </div>
+      </label>
+      <div class="submitWrap">
+        <input type="submit" value="Log in" class="submit">
+      </div>
+    </form>
+  </div>
+
+  <script>
+    const togglePasswordVisible = (() => {
+      let visible = false;
+      const pwField = document.getElementsByClassName('password')[0];
+      return (e) => {
+        visible = !visible;
+        e.target.innerHTML = visible ?
+          'X' : 'O';
+        pwField.type = visible ? 'text' : 'password';
+      }
+    })();
+    
+    document.getElementsByClassName('showPassword')[0]
+      .addEventListener('click', togglePasswordVisible);
+  </script>
+</body>
+</html>
