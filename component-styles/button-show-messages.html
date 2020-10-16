@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./button-show-messages.css" type="text/css">
+  <title>Document</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      color: white;
+    }
+    body {
+      width: 100vw;
+      height: 100vh;
+      background-color: hsl(0, 0%, 20%);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  </style>
+</head>
+<body>
+  <div class="messages">
+    <button class="showMessages">Show</button>
+    <div class="messagesContainer">
+
+    </div>
+  </div>
+  <div> test</div>
+
+  <script>
+    const messages = document.getElementsByClassName('messagesContainer')[0];
+    const btnToggle = document.getElementsByClassName('showMessages')[0];
+    btnToggle.addEventListener('click', () => {
+      messages.style.display = messages.style.display === 'none' ? '' : 'none';
+    }, false);
+  </script>
+</body>
+</html>

@@ -1,0 +1,45 @@
+.messages {
+  position: relative;
+  width: 100vw;
+  max-width: 300px;
+}
+
+/* needs screen when messages split into visible part
+< than that */
+/* @media screen and (max-width: 300px) {
+  .messages {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+  }
+} */
+
+.showMessages {
+  display: block;
+  margin-left: auto;
+  border-radius: 50%;
+  width: 55px;
+  height: 55px;
+  border: none;
+  background-color: hsl(0, 0%, 30%);
+  /* box-shadow: 1px 1px 1px hsl(0, 0%, 10%),
+    -1px -1px 1px hsl(0, 0%, 80%); */
+  box-shadow: inset -1px -1px 1px hsl(0, 0%, 10%),
+    inset 1px 1px 1px hsl(0, 0%, 80%);
+}
+
+.showMessages:active {
+  box-shadow: -1px -1px 1px hsl(0, 0%, 10%),
+    1px 1px 1px hsl(0, 0%, 80%);
+}
+
+.messagesContainer {
+  position: absolute;
+  top: 55px;
+  left: 0;
+  width: 100%;
+  background-color: hsl(0, 0%, 80%);
+  height: 500px;
+}
