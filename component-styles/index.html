@@ -9,60 +9,40 @@
   <title>Components</title>
 </head>
 <body>
-  <!-- <button class="button long" onclick="testClick(this)">Button</button> -->
-<div class="test-merge">
-
-</div>
-    <div class="chat-window">
-      <div class="chat-wrap">
-          <div class="messages">
-            <div class="out">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorum, sapiente ratione? Voluptas accusantium corporis, ullam iste magnam dicta illo, ad quidem in nisi debitis voluptatem obcaecati eveniet doloremque maxime sunt.</div>
-            <div class="out">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam enim beatae totam fuga facere dolore nisi repellendus illum temporibus. Odit voluptatem commodi recusandae ad aliquam facere tempore atque aperiam eum.</div>
-            <div class="inc">wtf???</div>
-            <div class="out">s dhjahdsh wjdwqdw</div>
-            <div class="inc">dqwhdqwhdqwhdwhwhdqwhd qhwdhuqwdu hqwdqudwq hudq hqwd huqdhuq wdhuqwdhuqdw</div>
-            <div class="inc">wqd qdwhiu qwdhuq wdhqd qwd huqdwhuqwd dqwjih qdqd inqwdnidqwnqdwni</div>
-          </div>
-          <div class="typing">
-            <div class="type-message" contenteditable=""></div>
-            <button class="send-message"">Send</button>
-          </div>
-      </div>
+  <div class="chatWindow">
+    <div class="chatWrap">
+        <div class="messages">
+          <div class="out">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorum, sapiente ratione? Voluptas accusantium corporis, ullam iste magnam dicta illo, ad quidem in nisi debitis voluptatem obcaecati eveniet doloremque maxime sunt.</div>
+          <div class="out">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam enim beatae totam fuga facere dolore nisi repellendus illum temporibus. Odit voluptatem commodi recusandae ad aliquam facere tempore atque aperiam eum.</div>
+          <div class="inc">wtf???</div>
+          <div class="out">s dhjahdsh wjdwqdw</div>
+          <div class="inc">dqwhdqwhdqwhdwhwhdqwhd qhwdhuqwdu hqwdqudwq hudq hqwd huqdhuq wdhuqwdhuqdw</div>
+          <div class="inc">wqd qdwhiu qwdhuq wdhqd qwd huqdwhuqwd dqwjih qdqd inqwdnidqwnqdwni</div>
+        </div>
+        <div class="composeMessage">
+          <div class="typeMessage" contenteditable=""></div>
+          <button class="sendMessage"">Send</button>
+        </div>
     </div>
-  
-    <div class="recent-chats">
-      <div class="recent-chats-header">
-        <h3>Recent messages</h3>
-      </div>
-      <div class="recent-chats-container">
-        <!-- <ul class="recent-messages">
-          <li>
-            <div class="message">
-              <div class="message-sender">
-                <div class="mask">
-                  <img src="./long.png" alt="sender" class="sender-img">
-                </div>
-                <p>Sender Name Lname</p>
-              </div>
-              <div class="message-content">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deleniti itaque maxime omnis voluptatibus placeat tempora. Aspernatur quod veniam accusantium ipsum, sunt nobis, nostrum nihil dicta sapiente fugiat blanditiis quidem fugit!
-              </div>
-            </div>
-          </li>
-        </ul> -->
-      </div>
-    </div>      
+  </div>
+
+  <div class="recent-chats">
+    <div class="recent-chats-header">
+      <h3>Recent messages</h3>
+    </div>
+    <div class="recent-chats-container">
+      <!-- structure is in script code -->
+    </div>
+  </div>      
   <script>
     "use strict";
-    function testClick(clicked) {
-      console.log(`clicked ${clicked}`);
-    }
 
     window.onload = () => {
       simRecentMessages();
       simMessages();
     }
 
+    // adds 20 messages to in chat window for sim purpose
     function simRecentMessages() {
       const messagesContainer = document.getElementsByClassName('messages')[0];
       for(let i = 0; i < 20; i++) {
@@ -74,6 +54,7 @@
       }
     }
 
+    // adds 20 recent messages for sim purpose
     function simMessages() {
       let ul = document.createElement('ul');
       let content = '';

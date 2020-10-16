@@ -5,16 +5,11 @@
   color: white;
 }
 
-.App {
+#root {
   background-color: hsl(0, 0%, 20%);
   min-height: 100vh;
   display: flex;
-  justify-content: center;
+  justify-content: baseline;
   align-items: center;
-}
-
-*:focus {
-  outline-style: solid;
-  outline-width: 0.2rem;
-  outline-color: rgb(55,55,55);
+  flex-direction: column;
 }
