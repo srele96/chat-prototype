@@ -1,0 +1,48 @@
+.toggle {
+  background-color: inherit;
+  border: none;
+  box-shadow: inset 1px 1px 1px hsl(0, 0%, 80%),
+  inset -1px -1px 1px hsl(0, 0%, 30%);
+  padding: 2px;
+  width: 100%;
+}
+
+.centerRow {
+  display: flex;
+  justify-content: center;
+}
+
+.toggle:hover {
+  background-color: hsl(0, 0%, 30%);
+}
+
+.wrap {
+  text-align: center;
+  padding-bottom: 5px;
+}
+
+.input {
+  background-color: inherit;
+  box-shadow: inset 1px 1px 1px hsl(0, 0%, 80%),
+  inset -1px -1px 1px hsl(0, 0%, 30%);
+  padding: 2px;
+}
+
+.confirm {
+  display: block;
+  margin-left: auto;
+  background-color: inherit;
+  border: none;
+  box-shadow: inset 1px 1px 1px hsl(0, 0%, 80%),
+  inset -1px -1px 1px hsl(0, 0%, 30%);
+  padding: 5px;
+}
+
+.confirm:active {
+  box-shadow: inset 1px 1px 1px hsl(0, 0%, 30%),
+  inset -1px -1px 1px hsl(0, 0%, 80%);
+}
+
+.confirm:hover {
+  background-color: hsl(0, 0%, 30%);
+}

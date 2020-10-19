@@ -1,6 +1,6 @@
 import React from 'react';
 import Profile from './Profile';
-import RecentChats from './RecentChats';
+import RecentChats from '../RecentChats';
 import styles from './ProfilePage.module.css';
 
 function ProfilePage() {

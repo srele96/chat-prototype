@@ -1,12 +1,12 @@
 .chatWindow {
-  box-shadow: inset 2px 2px 3px hsl(0, 0%, 35%),
-    inset -2px -2px 3px hsl(0, 0%, 35%);
+  box-shadow: inset 1px 1px 1px hsl(0, 0%, 35%),
+    inset -1px -1px 1px hsl(0, 0%, 35%);
   border-radius: 1rem;
   padding: 0.5rem;
   display: flex;
   width: 100vw;
   max-width: 700px;
-  height: 100vh;
+  height: 80vh;
   max-height: 600px;
 }
 
@@ -18,42 +18,43 @@
 }
 
 .messages {
-  box-shadow: inset 2px 2px 3px hsl(0, 0%, 35%),
-  inset -2px -2px 3px hsl(0, 0%, 35%);
+  box-shadow: inset 1px 1px 1px hsl(0, 0%, 35%),
+  inset -1px -1px 1px hsl(0, 0%, 35%);
   padding: 0.5rem;
   border-radius: 1rem;
   width: 100%;
-  height: 85%;
+  height: 80%;
   overflow-y: scroll;
 }
 
 .out {
+  word-wrap: break-word;
   background-color: hsla(200, 100%, 35%, 0.5);
   border-radius: 1rem;
-  padding: 0.5rem;
+  padding: 3px 0.5rem;
   margin: 4px;
   margin-left: auto;
   width: 70%;
-  min-width: 90%;
+  min-width: 70%;
 }
 
 .inc {
   word-wrap: break-word;
   background-color: hsla(160, 100%, 35%, 0.5);
   border-radius: 1rem;
-  padding: 0.5rem;
+  padding: 3px 0.5rem;
   margin: 4px;
   margin-right: auto;
   width: 70%;
-  min-width: 80%;
+  min-width: 70%;
 }
 
 .composeMessage {
-  box-shadow: inset 2px 2px 3px hsl(0, 0%, 35%),
-  inset -2px -2px 3px hsl(0, 0%, 35%);
+  border: 1px solid white;
   padding: 5px;
   border-radius: 1rem;
-  height: 15%;
+  height: 20%;
+  max-height: 30%;
   background-color: hsl(0, 0%, 20%);
   display: flex;
   align-items: center;
@@ -63,7 +64,8 @@
    in order for max-width to work and prevent expanding */
 .typeMessage {
   margin-right: 2px;
-  border: 1px solid hsl(0, 0%, 35%);
+  box-shadow: inset 2px 2px 2px white,
+    inset -2px -2px 2px white;
   overflow-y: scroll;
   height: 100%;
   width: 80%;

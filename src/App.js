@@ -3,8 +3,8 @@ import {
   BrowserRouter as Router,
   Switch, Route, Link
 } from 'react-router-dom';
-import ChatPage from './ChatPage';
-import ProfilePage from './ProfilePage';
+import ChatPage from './ChatPage/ChatPage';
+import ProfilePage from './ProfilePage/ProfilePage';
 
 function App() {
   return (

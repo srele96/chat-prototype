@@ -1,8 +1,6 @@
 import React from 'react';
 import styles from './ProfileDescription.module.css';
 
-// check for character input len, display char input max len
-// used n of m available
 function ProfileDescription() {
   return (
     <div className={styles.descWrap}>

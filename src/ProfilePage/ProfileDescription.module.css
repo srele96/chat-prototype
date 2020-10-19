@@ -12,8 +12,7 @@
   align-items: center;
 
   border-radius: 1rem;
-  box-shadow: 5px 5px 5px hsl(0, 0%, 75%);
-    /* , -5px -5px 5px hsl(0, 0%, 20%); */
+  box-shadow: 1px 1px 1px hsl(0, 0%, 75%);
 }
 
 .descriptionWrap {
@@ -38,8 +37,8 @@
   max-height: 150px;
 
   border-radius: 1rem;
-  box-shadow: inset 2px 2px 5px hsl(0, 0%, 45%),
-  inset -2px -2px 5px hsl(0, 0%, 45%);
+  box-shadow: inset 2px 2px 2px hsl(0, 0%, 45%),
+  inset -2px -2px 2px hsl(0, 0%, 45%);
   padding: 8px;
 }
 
@@ -51,7 +50,7 @@
 .aboutMeHeader {
   border-radius: 1rem;
   text-align: center;
-  box-shadow: 0 2px 5px white;
+  box-shadow: 0 2px 1px white;
 }
 
 .listWrap {

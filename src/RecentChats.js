@@ -1,8 +1,8 @@
-import React  from 'react';
+import React from 'react';
 import styles from './RecentChats.module.css';
 
 function RecentChats(props) {
-
+  const staticURL = 'https://images.unsplash.com/photo-1503023345310-bd7c1de61c7d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80';
   function renderMessages() {
     const messages = props.messages.map(message => 
       (<li>
@@ -14,8 +14,10 @@ function RecentChats(props) {
             </div>
           </div>
           <div className={styles.messageSender}>
-            <div className={styles.mask}>
-              <img src="https://www.talkwalker.com/images/2020/blog-headers/image-analysis.png" alt="Sender" className={styles.senderImg}/>
+            <div className={styles.mask} 
+              style={{'backgroundImage': `url(${staticURL})`, 
+                'backgroundPosition': 'center', 
+                'backgroundSize': 'cover'}}>
             </div>
           </div>
         </div>

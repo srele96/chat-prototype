@@ -1,4 +1,6 @@
 .settings {
+  box-shadow: inset 1px 1px 1px hsl(0, 0%, 80%),
+    inset -1px -1px 1px hsl(0, 0%, 30%);
   max-width: 17rem;
   width: 100vw;
 }
@@ -10,7 +12,6 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: aquamarine;
 }
 
 .settingsHeader {
@@ -20,13 +21,13 @@
   padding-left: 1rem;
   display: flex;
   align-items: center;
-  background-color: aqua;
 }
 
 .settingsList {
+  padding: 5px;
   list-style: none;
-  max-width: 17rem;
+  max-width: 100%;
+  max-height: 200px;
   width: 100vw;
-  height: 10rem;
   overflow-y: scroll;
 }
