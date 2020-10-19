@@ -7,7 +7,6 @@ function PageChatWindow() {
     for(let i = 0; i < 20; i++) {
       const choice = Math.floor(Math.random()*2);
       messages.push(<div className={choice<1? styles.inc:styles.out}>some conten dwahod awdhawhiodaw dhawdhdawhadhiowdahioj awhjoid wat</div>);
-      console.log(messages);
     }
     return messages;
   }
@@ -16,7 +15,6 @@ function PageChatWindow() {
     <div className={styles.chatWindow}>
       <div className={styles.chatWrap}>
         <div className={styles.messages}>
-          {/* content has to be fetched */}
           {  simMessages() }
         </div>
         <div className={styles.composeMessage}>

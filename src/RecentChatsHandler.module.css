@@ -1,0 +1,32 @@
+.showMessages {
+  z-index: 2;
+  position: fixed;
+  top: 40px;
+  right: 10px;
+  display: block;
+  margin-left: auto;
+  border-radius: 50%;
+  width: 55px;
+  height: 55px;
+  border: none;
+  background-color: hsl(0, 0%, 30%);
+  box-shadow: inset -1px -1px 1px hsl(0, 0%, 10%),
+    inset 1px 1px 1px hsl(0, 0%, 80%);
+}
+
+@media screen and (min-width: 1000px) {
+  .showMessages {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .showHide {
+    display: none;
+  }
+}
+
+.showMessages:active {
+  box-shadow: -1px -1px 1px hsl(0, 0%, 10%),
+    1px 1px 1px hsl(0, 0%, 80%);
+}

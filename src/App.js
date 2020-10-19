@@ -12,6 +12,7 @@ function App() {
       <div >
         <nav style={
           {
+            'margin': '0 auto',
             'width': '200px',
             'height': '20px',
           }
