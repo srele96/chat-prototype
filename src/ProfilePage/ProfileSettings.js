@@ -10,9 +10,9 @@ function ProfileSettings() {
     <div className={styles.settings}>
       <div className={styles.settingsHeader}>
         <h2 style={{'marginRight': '1rem'}}>
-          <FontAwesomeIcon icon={faCog} />
+          <FontAwesomeIcon icon={faCog} className={styles.icon}/>
         </h2>
-        <h2>
+        <h2 className={styles.title}>
           Settings
         </h2>
       </div>

@@ -1,8 +1,8 @@
 .recentChats {
-  margin: 0 auto;
   width: 100vw;
   max-width: 350px;
   position: relative;
+  padding: 15px;
 }
 
 .recentChatsContainer {
@@ -12,27 +12,51 @@
 }
 
 .recentChatsHeader {
+  border-radius: 36px;
+  background: #2a2a2a;
+  box-shadow:  -5px 5px 4px #252525, 
+    5px -5px 4px #2f2f2f;
   display: flex;
   justify-content: center;
   padding: 0.5rem;
 }
 
-.recentMessages {
+.headerTitle {
+  border-radius: 7px;
+  background: linear-gradient(225deg, #262626, #2d2d2d);
+  box-shadow:  -4px 4px 3px #272727, 
+    4px -4px 3px #2d2d2d;
+  padding: 2px 15px;
+}
+
+.headerTitle:hover {
+  background: linear-gradient(225deg, #2d2d2d, #262626);
+  box-shadow:  -4px 4px 3px #272727, 
+     4px -4px 3px #2d2d2d; 
+}
+
+.messagesContainer {
+  padding-top: 10px;
   list-style: none;
 }
 
 .message {
+  border-radius: 13px;
+  background: #2a2a2a;
+  box-shadow:  -3px 3px 3px #1f1f1f, 
+    3px -3px 3px #353535;
   display: flex;
   align-items: center;
-  border-radius: 1rem;
   width: 100%;
   min-height: 80px;
-  box-shadow: 1px 1px 1px hsl(0, 0%, 80%),
-  -1px -1px 1px hsl(0, 0%, 80%);
   margin-bottom: 10px;
 }
 
 .messageContent {
+  border-radius: 13px;
+  background: #2a2a2a;
+  box-shadow: inset -2px 2px 3px #1f1f1f, 
+    inset 2px -2px 3px #353535;
   padding: 5px;
   min-height: 4rem;
   max-height: 4rem;
@@ -40,11 +64,12 @@
   word-wrap: break-word;
   margin-right: 5%;
   margin-left: 5%;
-  border-radius: 5px;
+  margin-bottom: 2%;
 }
 
 .messageContent:hover {
-  background-color: hsl(0, 0%, 30%);
+  box-shadow:  -2px 2px 3px #1f1f1f, 
+   2px -2px 3px #353535;
 }
 
 .messageSender {
@@ -54,6 +79,9 @@
 }
 
 .mask {
+  background: linear-gradient(225deg, #2d2d2d, #262626);
+  box-shadow:  -5px 5px 10px #222222, 
+    5px -5px 10px #323232;
   border-radius: 50%;
   overflow: hidden;
   width: 50px;
@@ -62,9 +90,11 @@
 }
 
 .senderName {
-  border-radius: 1rem;
+  border-radius: 13px;
+  background: linear-gradient(225deg, #2d2d2d, #262626);
+  box-shadow:  -2px 2px 3px #232323, 
+    2px -2px 3px #313131;
   text-align: center;
-  background-color: hsl(0, 0%, 30%);
   margin-left: 5%;
   margin-right: 5%;
 }

@@ -6,6 +6,7 @@ function ProfileDescription() {
     <div className={styles.descWrap}>
       <div className={styles.desc}>
         <div className={styles.descriptionWrap}>
+          <p className={styles.descriptionTitle}>Description</p>
           <div className={styles.description} contentEditable="true" />
         </div>
         <div className={styles.aboutMeWrap}>
@@ -14,19 +15,13 @@ function ProfileDescription() {
           </div>
           <div className={styles.listWrap}>
             <ul className={styles.aboutMeList}>
-              <li>
+              <li className={styles.item}>
                 <div>something about me</div>
               </li>
-              <li>
+              <li className={styles.item}>
                 <div>something about me</div>
               </li>
-              <li>
-                <div>something about me</div>
-              </li>
-              <li>
-                <div>something about me</div>
-              </li>
-              <li>
+              <li className={styles.item}>
                 <div>something about me</div>
               </li>
             </ul>

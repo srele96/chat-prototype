@@ -13,14 +13,12 @@ function PageChatWindow() {
 
   return (
     <div className={styles.chatWindow}>
-      <div className={styles.chatWrap}>
-        <div className={styles.messages}>
-          {  simMessages() }
-        </div>
-        <div className={styles.composeMessage}>
-          <div className={styles.typeMessage} contentEditable/>
-          <button className={styles.sendMessage}>Send</button>
-        </div>
+      <div className={styles.messages}>
+        {  simMessages() }
+      </div>
+      <div className={styles.composeMessage}>
+        <div className={styles.typeMessage} contentEditable/>
+        <button className={styles.sendMessage}>Send</button>
       </div>
     </div>
   );

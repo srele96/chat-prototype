@@ -24,7 +24,7 @@ function RecentChats(props) {
       </li>)
     );
     return (
-      <ul className={styles.recentMessages}>
+      <ul className={styles.messagesContainer}>
         {messages}
       </ul>
     );
@@ -33,7 +33,7 @@ function RecentChats(props) {
   return (
     <div className={styles.recentChats}>
       <div className={styles.recentChatsHeader}>
-        <h3>Recent messages</h3>
+        <h3 className={styles.headerTitle}>Recent chats</h3>
       </div>
       <div className={styles.recentChatsContainer}>
         {renderMessages()}

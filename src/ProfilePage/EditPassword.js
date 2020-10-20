@@ -9,7 +9,7 @@ function EditPassword() {
   }
 
   return(
-    <div >
+    <div>
       <button onClick={toggle} className={mutualStyles.toggle}>Edit password</button>
       {isVisible && 
       <div>

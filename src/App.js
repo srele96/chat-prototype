@@ -24,20 +24,20 @@ function App() {
               'justifyContent': 'space-around'
             }}>
             <li>
-              <Link to="/profile">Profile</Link>
+              <Link to="/chat-prototype/profile">Profile</Link>
             </li>
             <li>
-              <Link to="/chat">Chat</Link>
+              <Link to="/chat-prototype/chat">Chat</Link>
             </li>
           </ul>
         </nav>
       </div>
 
       <Switch>
-        <Route path="/profile">
+        <Route path="/chat-prototype/profile">
           <ProfilePage />
         </Route>
-        <Route path="/chat">
+        <Route path="/chat-prototype/chat">
           <ChatPage />
         </Route>
       </Switch>

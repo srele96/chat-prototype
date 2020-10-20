@@ -1,17 +1,10 @@
 .settings {
-  box-shadow: inset 1px 1px 1px hsl(0, 0%, 80%),
-    inset -1px -1px 1px hsl(0, 0%, 30%);
+  border-radius: 23px;
+  background: #2a2a2a;
+  box-shadow: inset -7px 7px 14px #1e1e1e, 
+              inset 7px -7px 14px #363636;
   max-width: 17rem;
   width: 100vw;
-}
-
-.setting {
-  max-width: 17rem;
-  width: 100vw;
-  min-height: 3rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 .settingsHeader {
@@ -19,8 +12,25 @@
   width: 100vw;
   min-height: 2rem;
   padding-left: 1rem;
+  padding-top: 0.5rem;
   display: flex;
   align-items: center;
+}
+
+.icon, .title {
+  padding: 1px;
+  border-radius: 29px;
+  background: linear-gradient(225deg, #2d2d2d, #262626);
+  box-shadow:  -4px 4px 3px #232323, 
+    4px -4px 3px #313131;
+}
+
+.title {
+  padding: 0 5px;
+}
+
+.icon:hover, .title:hover {
+  background: linear-gradient(225deg, #262626, #2d2d2d);
 }
 
 .settingsList {

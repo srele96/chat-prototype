@@ -1,19 +1,22 @@
 .toggle {
-  background-color: inherit;
+  border-radius: 18px;
+  background: #2a2a2a;
+  box-shadow:  -7px 7px 8px #242424, 
+    7px -7px 8px #303030;
   border: none;
-  box-shadow: inset 1px 1px 1px hsl(0, 0%, 80%),
-  inset -1px -1px 1px hsl(0, 0%, 30%);
-  padding: 2px;
-  width: 100%;
+  padding: 7px 15px;
+  margin: 10px auto;
+  display: block;
+}
+
+.toggle:active {
+  box-shadow: inset -7px 7px 8px #242424, 
+  inset 7px -7px 8px #303030;
 }
 
 .centerRow {
   display: flex;
   justify-content: center;
-}
-
-.toggle:hover {
-  background-color: hsl(0, 0%, 30%);
 }
 
 .wrap {
@@ -22,27 +25,30 @@
 }
 
 .input {
-  background-color: inherit;
-  box-shadow: inset 1px 1px 1px hsl(0, 0%, 80%),
-  inset -1px -1px 1px hsl(0, 0%, 30%);
-  padding: 2px;
+  border-radius: 18px;
+  background: linear-gradient(225deg, #262626, #2d2d2d);
+  box-shadow:  -5px 5px 5px #242424, 
+    5px -5px 5px #303030;
+  border: none;
+  padding: 7px;
+  margin-top: 5px;
 }
 
 .confirm {
+  border-radius: 18px;
+  background: #2a2a2a;
+  box-shadow:  -7px 7px 8px #242424, 
+    7px -7px 8px #303030;
   display: block;
   margin-left: auto;
-  background-color: inherit;
   border: none;
-  box-shadow: inset 1px 1px 1px hsl(0, 0%, 80%),
-  inset -1px -1px 1px hsl(0, 0%, 30%);
-  padding: 5px;
+  padding: 7px 15px;
+  margin-top: 7px;
+  margin-bottom: 2px;
+  margin-right: 20px;
 }
 
 .confirm:active {
-  box-shadow: inset 1px 1px 1px hsl(0, 0%, 30%),
-  inset -1px -1px 1px hsl(0, 0%, 80%);
-}
-
-.confirm:hover {
-  background-color: hsl(0, 0%, 30%);
+  box-shadow: inset -7px 7px 8px #242424, 
+  inset 7px -7px 8px #303030;
 }

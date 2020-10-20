@@ -1,61 +1,69 @@
 .chatWindow {
-  box-shadow: inset 1px 1px 1px hsl(0, 0%, 35%),
-    inset -1px -1px 1px hsl(0, 0%, 35%);
-  border-radius: 1rem;
-  padding: 0.5rem;
+  border-radius: 24px;
+  background: #2a2a2a;
+  box-shadow: inset -15px 15px 13px #242424, 
+    inset 15px -15px 13px #303030;
   display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 0;
   width: 100vw;
   max-width: 500px;
   height: 80vh;
   max-height: 600px;
-  margin: 0 auto;
-}
-
-.chatWrap {
   position: relative;
-  background-color: hsl(0, 0%, 20%);
-  border-radius: 1rem;
-  width: 100%;
 }
 
 .messages {
-  box-shadow: inset 1px 1px 1px hsl(0, 0%, 35%),
-  inset -1px -1px 1px hsl(0, 0%, 35%);
+  border-radius: 15px;
+  background: linear-gradient(225deg, #2d2d2d, #262626);
+  box-shadow:  -6px 6px 12px #1e1e1e, 
+    6px -6px 12px #363636;
   padding: 0.5rem;
-  border-radius: 1rem;
-  width: 100%;
-  height: 80%;
+  width: 80%;
   overflow-y: scroll;
 }
 
 .out {
+  border-radius: 5px;
+  background: #2a2a2a;
+  box-shadow: inset -8px 8px 16px #1a1a1a, 
+    inset 8px -8px 16px #3a3a3a;
   word-wrap: break-word;
-  background-color: hsla(200, 100%, 35%, 0.5);
-  border-radius: 1rem;
   padding: 3px 0.5rem;
-  margin: 4px;
+  margin: 7px;
   margin-left: auto;
   width: 70%;
   min-width: 70%;
 }
 
+.out:hover {
+  box-shadow: -3px 3px 5px #1a1a1a, 
+   3px -3px 5px #3a3a3a;
+}
+
 .inc {
+  border-radius: 5px;
+  background: #2a2a2a;
+  box-shadow:  -5px 5px 4px #232323, 
+    5px -5px 4px #313131;
   word-wrap: break-word;
-  background-color: hsla(0, 0%, 35%, 0.5);
-  border-radius: 1rem;
   padding: 3px 0.5rem;
-  margin: 4px;
+  margin: 7px;
   margin-right: auto;
   width: 70%;
   min-width: 70%;
 }
 
+.inc:hover {
+  box-shadow: inset -5px 5px 4px #232323, 
+    inset 5px -5px 4px #313131;
+}
+
 .composeMessage {
-  padding: 5px;
-  border-radius: 1rem;
-  height: 20%;
-  max-height: 30%;
-  background-color: hsl(0, 0%, 20%);
+  padding: 15px 5px 5px 5px;
+  width: 80%;
+  height: max-content;
   display: flex;
   align-items: center;
 }
@@ -63,33 +71,36 @@
 /* parent has to have width & position relative property
    in order for max-width to work and prevent expanding */
 .typeMessage {
-  margin-right: 2px;
-  border: 1px solid hsl(0, 0%, 80%);
-  overflow-y: scroll;
-  height: 100%;
-  width: 80%;
-  max-width: 80%;
-  resize: none;
-  padding: 0.5rem;
-  border-radius: 1rem;
+  border-radius: 5px;
+  background: #2a2a2a;
+  box-shadow: inset -5px 5px 5px #111111, 
+    inset 5px -5px 5px #434343;
+  width: 90%;
+  min-width: 150px;
+  max-width: 350px;
   word-wrap: break-word;
+  min-height: 35px;
+  max-height: 90px;
+  overflow-y: scroll;
+  padding: 5px;
 }
 
 .sendMessage {
-  box-shadow: inset -1px -1px 1px hsl(0, 0%, 10%),
-    inset 1px 1px 1px hsl(0, 0%, 80%);
-  height: 100%;
-  width: 20%;
-  border-radius: 1rem;
-  background-color: hsl(0, 0%, 35%);
-  border-radius: 1rem;
+  margin-left: auto;
+  border: none;
+  border-radius: 5px;
+  padding: 6px 3px;
+  background: #2a2a2a;
+  box-shadow:  -3px 3px 2px #1d1d1d, 
+    3px -3px 2px #373737;
 }
 
 .sendMessage:active {
-    box-shadow: inset -1px -1px 1px hsl(0, 0%, 80%),
-    inset 1px 1px 1px hsl(0, 0%, 10%);
+  background: linear-gradient(225deg, #262626, #2d2d2d);
+  box-shadow:  -3px 3px 2px #1d1d1d, 
+    3px -3px 2px #373737;
 }
 
 .sendMessage:hover {
-  background-color: hsl(0, 0%, 50%);
+
 }
