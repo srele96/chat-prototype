@@ -7,7 +7,7 @@
 
 .recentChatsContainer {
   padding: 5px;
-  height: 400px;
+  max-height: 60vh;
   overflow-y: scroll;
 }
 

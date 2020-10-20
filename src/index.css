@@ -6,11 +6,18 @@
 }
 
 #root {
+  overflow: hidden;
   width: 100vw;
   height: 100vh;
-  justify-content: baseline;
-  align-items: center;
   flex-direction: column;
+}
+
+#page {
+  height: 80vh;
+  overflow-y: scroll;
+  margin-top: 60px;
+  width: 300vw;
+  display: flex;
 }
 
 body {

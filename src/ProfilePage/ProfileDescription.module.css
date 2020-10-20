@@ -27,19 +27,21 @@
 
   .descriptionWrap {
     max-width: 240px;
+    min-width: 240px;
   }
 }
 
 
 @media all and (max-width: 500px) {
   .descriptionWrap {
-    max-width: 90vw;
+    max-width: 300px;
   }
 }
 
 .description {
   overflow: hidden;
   max-width: 100%;
+  min-width: 100%;
   word-wrap: break-word;
   min-height: 150px;
   max-height: 150px;

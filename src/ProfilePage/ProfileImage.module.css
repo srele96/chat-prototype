@@ -1,4 +1,8 @@
 .avatarWrapper {
+  border-radius: 11px;
+  background: #2a2a2a;
+  box-shadow: inset -6px 6px 6px #232323, 
+    inset 6px -6px 6px #313131;
   padding: 1rem;
   position: relative;
   max-width: 20rem;
@@ -10,7 +14,7 @@
   border-radius: 18px;
   background: linear-gradient(225deg, #2d2d2d, #262626);
   box-shadow:  -5px 5px 10px #1f1f1f, 
-               5px -5px 10px #353535;
+    5px -5px 10px #353535;
   position: relative;
   border-radius: 15px;
   overflow: hidden;

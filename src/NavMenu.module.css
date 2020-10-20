@@ -1,0 +1,19 @@
+.navList {
+  display: flex;
+  list-style: none;
+}
+
+.navLink {
+  border-radius: 10px;
+  background: #2a2a2a;
+  box-shadow:  -5px 5px 10px #232323, 
+    5px -5px 10px #313131;
+  display: flex;
+  text-decoration: none;
+  padding: 10px;
+}
+
+.navLink:active {
+  box-shadow: inset -5px 5px 10px #232323, 
+  inset 5px -5px 10px #313131;
+}

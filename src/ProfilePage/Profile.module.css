@@ -7,5 +7,6 @@
 @media all and (min-width: 700px) {
   .profileImgSet {
     flex-direction: row;
+    align-items: flex-start;
   }
 }

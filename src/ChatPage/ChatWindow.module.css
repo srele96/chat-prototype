@@ -76,7 +76,7 @@
   box-shadow: inset -5px 5px 5px #111111, 
     inset 5px -5px 5px #434343;
   width: 90%;
-  min-width: 150px;
+  min-width: 100px;
   max-width: 350px;
   word-wrap: break-word;
   min-height: 35px;
