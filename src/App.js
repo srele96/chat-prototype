@@ -95,6 +95,9 @@ function App() {
         }}
       >
         <Switch>
+          <Route path="/chat-prototype/">
+            <ProfilePage />
+          </Route>
           <Route path="/chat-prototype/profile">
             <ProfilePage />
           </Route>
