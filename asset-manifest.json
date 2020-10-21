@@ -1,22 +1,27 @@
 {
   "files": {
-    "main.css": "/chat-prototype/static/css/main.cab4b9df.chunk.css",
-    "main.js": "/chat-prototype/static/js/main.18f9d7f0.chunk.js",
-    "main.js.map": "/chat-prototype/static/js/main.18f9d7f0.chunk.js.map",
+    "main.css": "/chat-prototype/static/css/main.816270eb.chunk.css",
+    "main.js": "/chat-prototype/static/js/main.e3f70503.chunk.js",
+    "main.js.map": "/chat-prototype/static/js/main.e3f70503.chunk.js.map",
     "runtime-main.js": "/chat-prototype/static/js/runtime-main.570b9d75.js",
     "runtime-main.js.map": "/chat-prototype/static/js/runtime-main.570b9d75.js.map",
-    "static/js/2.33b7fe10.chunk.js": "/chat-prototype/static/js/2.33b7fe10.chunk.js",
-    "static/js/2.33b7fe10.chunk.js.map": "/chat-prototype/static/js/2.33b7fe10.chunk.js.map",
+    "static/js/2.c9ac68c8.chunk.js": "/chat-prototype/static/js/2.c9ac68c8.chunk.js",
+    "static/js/2.c9ac68c8.chunk.js.map": "/chat-prototype/static/js/2.c9ac68c8.chunk.js.map",
     "index.html": "/chat-prototype/index.html",
-    "precache-manifest.534d20903b139d85e48fe9d4e3dd6448.js": "/chat-prototype/precache-manifest.534d20903b139d85e48fe9d4e3dd6448.js",
+    "precache-manifest.367b6016f214560c55669c68e2130a55.js": "/chat-prototype/precache-manifest.367b6016f214560c55669c68e2130a55.js",
     "service-worker.js": "/chat-prototype/service-worker.js",
-    "static/css/main.cab4b9df.chunk.css.map": "/chat-prototype/static/css/main.cab4b9df.chunk.css.map",
-    "static/js/2.33b7fe10.chunk.js.LICENSE.txt": "/chat-prototype/static/js/2.33b7fe10.chunk.js.LICENSE.txt"
+    "static/css/main.816270eb.chunk.css.map": "/chat-prototype/static/css/main.816270eb.chunk.css.map",
+    "static/js/2.c9ac68c8.chunk.js.LICENSE.txt": "/chat-prototype/static/js/2.c9ac68c8.chunk.js.LICENSE.txt",
+    "static/media/glenn-carstens-peters-npxXWgQ33ZQ-unsplash.jpg": "/chat-prototype/static/media/glenn-carstens-peters-npxXWgQ33ZQ-unsplash.4aefeea9.jpg",
+    "static/media/joshua-ness--bEZ_OfWu3Y-unsplash.jpg": "/chat-prototype/static/media/joshua-ness--bEZ_OfWu3Y-unsplash.1693fffe.jpg",
+    "static/media/neonbrand-Ak5c5VTch5E-unsplash.jpg": "/chat-prototype/static/media/neonbrand-Ak5c5VTch5E-unsplash.1bd6d7c4.jpg",
+    "static/media/priscilla-du-preez-ELnxUDFs6ec-unsplash.jpg": "/chat-prototype/static/media/priscilla-du-preez-ELnxUDFs6ec-unsplash.63039c46.jpg",
+    "static/media/suanmoo-tXB7yfP9gg0-unsplash.jpg": "/chat-prototype/static/media/suanmoo-tXB7yfP9gg0-unsplash.c2cb2f94.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.570b9d75.js",
-    "static/js/2.33b7fe10.chunk.js",
-    "static/css/main.cab4b9df.chunk.css",
-    "static/js/main.18f9d7f0.chunk.js"
+    "static/js/2.c9ac68c8.chunk.js",
+    "static/css/main.816270eb.chunk.css",
+    "static/js/main.e3f70503.chunk.js"
   ]
 }
