@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import {
-  BrowserRouter as Router,
+  HashRouter as Router,
   Switch, Route
 } from 'react-router-dom';
 import ChatPage from './ChatPage/ChatPage';
@@ -27,7 +27,7 @@ function App() {
   }
 
   return (
-    <Router>
+    <Router basename='/'>
       <Navigation 
         handleClick={handleClick} 
         isActive={isActive} 
@@ -42,6 +42,9 @@ function App() {
         }}
       >
         <Switch>
+          <Route exact path="/">
+            <h1>Home page doesn't exist... :D</h1>
+          </Route>
           <Route path="/chat-prototype/profile">
             <PageScroll>
               <ProfilePage />
