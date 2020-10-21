@@ -36,7 +36,7 @@ function Navigation(props) {
             <li>
               <Link
                 onClick={props.hideMenu}
-                to="/chat-prototype/profile" 
+                to="/profile" 
                 className={styles.navLink}>
                 <BsPersonFill />
                 Profile
@@ -45,7 +45,7 @@ function Navigation(props) {
             <li>
               <Link
                 onClick={props.hideMenu}
-                to="/chat-prototype/chat"
+                to="/chat"
                 className={styles.navLink}>
                 <TiMessages />
                 Chat

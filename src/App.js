@@ -43,15 +43,19 @@ function App() {
       >
         <Switch>
           <Route exact path="/">
-            <h1>Home page doesn't exist... :D</h1>
+            <PageScroll>
+              <h1 style={{wordBreak: 'break-word'}}>Home page doesn't exist... :D</h1>
+              <p>Proceed using menu on top</p>
+            </PageScroll>
+            <SideMenu hideMenu={hideMenu}/>
           </Route>
-          <Route path="/chat-prototype/profile">
+          <Route path="/profile">
             <PageScroll>
               <ProfilePage />
             </PageScroll>
             <SideMenu hideMenu={hideMenu}/>
           </Route>
-          <Route path="/chat-prototype/chat">
+          <Route path="/chat">
             <ChatPage />
             <SideMenu hideMenu={hideMenu}/>
           </Route>

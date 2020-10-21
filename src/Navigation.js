@@ -1,6 +1,5 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { FaHome } from 'react-icons/fa';
 import { TiMessages } from 'react-icons/ti';
 import { FaAngleDoubleLeft } from 'react-icons/fa';
 import { BsPersonFill } from "react-icons/bs";
@@ -19,7 +18,7 @@ function Navigation(props) {
           <ul className={styles.navList}>
             <li>
               <Link
-                to="/chat-prototype/profile" 
+                to="/profile" 
                 className={styles.navLink}>
                 <BsPersonFill />
                 Profile
@@ -27,7 +26,7 @@ function Navigation(props) {
             </li>
             <li>
               <Link
-                to="/chat-prototype/chat"
+                to="/chat"
                 className={styles.navLink}>
                 <TiMessages />
                 Chat
