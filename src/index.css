@@ -8,16 +8,15 @@
 #root {
   overflow: hidden;
   width: 100vw;
-  height: 100vh;
   flex-direction: column;
 }
 
 #page {
-  height: 80vh;
-  overflow-y: scroll;
-  margin-top: 60px;
   width: 300vw;
   display: flex;
+  height: 85vh;
+  margin-top: 15vh;
+  overflow: hidden;
 }
 
 body {
