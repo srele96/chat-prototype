@@ -3,6 +3,7 @@ import {
   HashRouter as Router,
   Switch, Route
 } from 'react-router-dom';
+import HomePage from './HomePage/HomePage';
 import ChatPage from './ChatPage/ChatPage';
 import ProfilePage from './ProfilePage/ProfilePage';
 import Navigation from './Navigation';
@@ -44,8 +45,7 @@ function App() {
         <Switch>
           <Route exact path="/">
             <PageScroll>
-              <h1 style={{wordBreak: 'break-word'}}>Home page doesn't exist... :D</h1>
-              <p>Proceed using menu on top</p>
+              <HomePage />
             </PageScroll>
             <SideMenu hideMenu={hideMenu}/>
           </Route>
@@ -56,7 +56,9 @@ function App() {
             <SideMenu hideMenu={hideMenu}/>
           </Route>
           <Route path="/chat">
-            <ChatPage />
+            <PageScroll>
+              <ChatPage />
+            </PageScroll>
             <SideMenu hideMenu={hideMenu}/>
           </Route>
         </Switch>

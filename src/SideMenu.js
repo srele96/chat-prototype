@@ -6,6 +6,7 @@ import { BsFillChatSquareDotsFill,
   BsPeopleFill, BsPersonFill } from "react-icons/bs";
 import { Link } from 'react-router-dom';
 import { TiMessages } from 'react-icons/ti';
+import { MdHome } from "react-icons/md";
 import styles from './SideMenu.module.css';
 
 function Navigation(props) {
@@ -33,6 +34,15 @@ function Navigation(props) {
             <h3>Pages</h3>
           </div>
           <ul className={styles.navList}>
+            <li>
+              <Link
+                onClick={props.hideMenu}
+                to="/" 
+                className={styles.navLink}>
+                <MdHome />
+                Home
+              </Link>
+            </li>          
             <li>
               <Link
                 onClick={props.hideMenu}
